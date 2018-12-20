@@ -13,6 +13,7 @@ public class SplashActivity extends AppCompatActivity {
         final SharedPreferences sharedPref =
                 PreferenceManager.getDefaultSharedPreferences( this );
         boolean registered = sharedPref.getBoolean( "registered", false );
+        registered = true;
         Class dest;
         if (!registered) {
             dest = LoginActivity.class;

@@ -1,3 +1,5 @@
+package dsa.eetac.upc.edu.examen_minimo2;
+
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

@@ -8,7 +8,6 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.app.LoaderManager.LoaderCallbacks;
 
@@ -117,14 +116,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             return true;
         }
         if (shouldShowRequestPermissionRationale( READ_CONTACTS )) {
-            Snackbar.make( mEmailView, R.string.permission_rationale, Snackbar.LENGTH_INDEFINITE )
+            /*Snackbar.make( mEmailView, R.string.permission_rationale, Snackbar.LENGTH_INDEFINITE )
                     .setAction( android.R.string.ok, new View.OnClickListener() {
                         @Override
                         @TargetApi(Build.VERSION_CODES.M)
                         public void onClick(View v) {
                             requestPermissions( new String[]{READ_CONTACTS}, REQUEST_READ_CONTACTS );
                         }
-                    } );
+                    } );*/
         } else {
             requestPermissions( new String[]{READ_CONTACTS}, REQUEST_READ_CONTACTS );
         }
